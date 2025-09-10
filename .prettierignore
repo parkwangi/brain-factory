@@ -1,0 +1,10 @@
+**/.git
+**/.hg
+**/.next
+**/.svn
+**/.turbo
+**/dist
+**/node_modules
+**/next-env.d.ts
+**/*.hbs
+pnpm-lock.yaml

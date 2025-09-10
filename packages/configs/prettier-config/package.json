@@ -1,0 +1,15 @@
+{
+  "name": "@repo/prettier-config",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./index.cjs"
+  },
+  "main": "index.cjs",
+  "scripts": {
+    "clean": "rimraf node_modules"
+  },
+  "dependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-packagejson": "^2.5.19"
+  }
+}

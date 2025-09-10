@@ -3,12 +3,16 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "main": "index.js",
+  "exports": {
+    "./restrict-env": "./src/restrict-env.js",
+    "./library": "./src/library.js",
+    "./next": "./src/next.js",
+    "./react": "./src/react.js",
+    "./react-library": "./src/react-library.js"
+  },
   "scripts": {
     "clean": "rimraf node_modules dist .turbo"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
     "@eslint/compat": "^1.3.2",

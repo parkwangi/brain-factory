@@ -31,7 +31,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol>
+        <ol className="pb-4">
           <li>
             Get started by editing <code>apps/web/app/page.tsx</code>
           </li>
