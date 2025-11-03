@@ -1,0 +1,43 @@
+{/* button.mdx */}
+
+import { Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as ButtonStories from './button.stories';
+import { Separator } from '@repo/ui/components/base/separator';
+
+<Meta of={ButtonStories} />
+
+# **Button**
+
+## Basic
+
+<Canvas of={ButtonStories.Base} />
+
+## Variants
+
+<Canvas of={ButtonStories.Variants} />
+
+## Sizes
+
+<Canvas of={ButtonStories.Sizes} />
+
+## Colors
+
+### primary
+
+<Canvas of={ButtonStories.PrimaryColors} />
+
+### outline
+
+<Canvas of={ButtonStories.OutlineColors} />
+
+### text
+
+<Canvas of={ButtonStories.TextColors} />
+
+### icon
+
+<Canvas of={ButtonStories.IconColors} />
+
+## Loading
+
+<Canvas of={ButtonStories.Loading} />

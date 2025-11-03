@@ -2,16 +2,25 @@
   "name": "brain-factory",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
+    "build": "turbo build",
     "check-types": "turbo run check-types",
-    "dev": "turbo run dev",
+    "clean": "turbo clean && rimraf .turbo node_modules",
+    "dev": "turbo dev",
     "dev:web": "turbo dev --filter=@repo/ui --filter=web",
     "format": "prettier --write .",
-    "lint": "turbo run lint"
+    "lint": "turbo lint --continue",
+    "prepare": "husky",
+    "start": "turbo start"
+  },
+  "lint-staged": {
+    "**/*": "prettier --ignore-unknown --write"
   },
   "devDependencies": {
     "@repo/prettier-config": "workspace:*",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.4",
     "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
     "turbo": "^2.5.6",
     "typescript": "5.9.2"
   },
